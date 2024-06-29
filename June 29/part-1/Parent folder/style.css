@@ -1,0 +1,34 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #9295d3;
+}
+
+/* Defining custom behavior for the links */
+
+/* For this we use pseudo selectors */
+/* We use pseudo selectors with : (colon symbol) and selector name */
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

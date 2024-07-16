@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 16 | HTML Lists - nested</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* id selector */
+    #primary-list {
+      background-color: white;
+
+      padding: 16px 24px 20px 12px;
+      border: 4px solid black;
+      border-radius: 8px;
+    }
+
+    #text-center {
+      text-align: center;
+    }
+
+    #list-container {
+      min-width: 300px;
+      max-width: 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- id attribute should be unique -->
+  <!-- Repitition of same id is illegal -->
+  <div id="list-container">
+    <h3 id="text-center">Bulleted list</h3>
+    <div id="primary-list">
+      <ul type="disc">
+        <li>It's raining
+          <ul type="disc">
+            <li>Cats
+              <ul type="disc">
+                <li>Siamese</li>
+                <li>Burmese</li>
+                <li>Persian</li>
+              </ul>
+            </li>
+          </ul>
+          <ul type="disc">
+            <li>Dogs
+              <ul type="disc">
+                <li>Beagles</li>
+                <li>Poodles</li>
+                <li>Terriers
+                  <!-- <ul style="list-style-type: disc;"> -->
+                  <ul type="disc">
+                    <li>Jack Russel</li>
+                    <li>Yorkshire</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

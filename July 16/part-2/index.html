@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>July 16 | HTML Lists - nested part-2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* class selector */
+    .primary-list {
+      background-color: white;
+
+      padding: 16px 24px 20px 12px;
+      border: 4px solid black;
+      border-radius: 8px;
+      overflow: auto;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .list-container {
+      min-width: 300px;
+      max-width: 50%;
+    }
+
+    main {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      align-items: stretch;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- An element can have multiple classes and the same class can have multiple elements. -->
+  <main>
+    <div class="list-container">
+      <h3 class="text-center">Bulleted list</h3>
+      <div class="primary-list">
+        <ul type="disc">
+          <li>It's raining
+            <ul type="disc">
+              <li>Cats
+                <ul type="disc">
+                  <li>Siamese</li>
+                  <li>Burmese</li>
+                  <li>Persian</li>
+                </ul>
+              </li>
+            </ul>
+            <ul type="disc">
+              <li>Dogs
+                <ul type="disc">
+                  <li>Beagles</li>
+                  <li>Poodles</li>
+                  <li>Terriers
+                    <!-- <ul style="list-style-type: disc;"> -->
+                    <ul type="disc">
+                      <li>Jack Russel</li>
+                      <li>Yorkshire</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="list-container">
+      <h3 class="text-center">Numbered list</h3>
+      <div class="primary-list">
+        <ol type="1">
+          <li>Move image by 2px</li>
+          <li>Learn to code
+            <ol type="a">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript
+                <ol type="i">
+                  <li>React
+                    <ol type="1">
+                      <li>State</li>
+                      <li>Components
+                        <!-- <ol style="list-style-type: lower-alpha;"> -->
+                        <ol type="a">
+                          <li>Mounting</li>
+                        </ol>
+                      </li>
+                    </ol>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

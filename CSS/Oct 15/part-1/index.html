@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>October 15 | CSS Selectors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="#">
+        <label for="fname"
+          >First Name<input type="text" name="fname" id="fname"
+        /></label>
+        <label for="lname"
+          >Last Name<input type="text" name="lname" id="lname"
+        /></label>
+        <label for="email"
+          >Email<input type="email" name="email" id="email"
+        /></label>
+        <label for="address"
+          >Address<input type="text" name="address" id="address"
+        /></label>
+
+        <fieldset class="topping">
+          <legend>Toppings</legend>
+
+          <label for="onion"
+            ><input type="checkbox" id="onion" name="toppings" value="onion" />
+            Onion
+          </label>
+
+          <label for="cheese"
+            ><input
+              type="checkbox"
+              id="cheese"
+              name="toppings"
+              value="cheese"
+            />
+            cheese
+          </label>
+
+          <label for="patty"
+            ><input type="checkbox" id="patty" name="toppings" value="patty" />
+            patty
+          </label>
+        </fieldset>
+        <fieldset class="beverage">
+          <legend>Beverage Item</legend>
+
+          <label for="softdrink"
+            ><input
+              type="radio"
+              id="softdrink"
+              name="beverage-item"
+              value="soft drink"
+            />soft drink
+          </label>
+
+          <label for="coffee"
+            ><input
+              type="radio"
+              id="coffee"
+              name="beverage-item"
+              value="coffee"
+            />
+            coffee
+          </label>
+
+          <label for="cold coffee"
+            ><input
+              type="radio"
+              id="coldcoffee"
+              name="beverage-item"
+              value="cold coffee"
+            />
+            coldcoffee
+          </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

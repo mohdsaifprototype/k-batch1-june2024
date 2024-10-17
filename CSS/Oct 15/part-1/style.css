@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  place-items: center;
+}
+
+.container {
+  width: max-content;
+  margin: 0 auto;
+}
+
+form {
+  border: 2px solid violet;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  gap: 20px 12px;
+  grid-template-areas:
+    "fname lname"
+    "email email"
+    "addr addr"
+    "addr addr"
+    "topping b-item"
+    "topping b-item"
+    "submit submit";
+}
+label[for="fname"] {
+  grid-area: fname;
+}
+
+label[for="lname"] {
+  grid-area: lname;
+}
+
+label[for="email"] {
+  grid-area: email;
+}
+label[for="address"] {
+  grid-area: addr;
+}
+
+input[type="email"], input[type="text"] {
+  width: 100%;
+} 
+
+.topping {
+  grid-area: topping;
+}
+
+.beverage {
+  grid-area: b-item;
+}
+
+button[type="submit"] {
+  grid-area: submit;
+}
+
+input,
+label,
+button[type="submit"] {
+  display: block;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline;
+}
+
+form *{
+  font-size: 1.2rem;
+  border-radius: 4px;
+}
+
+input, button[type="submit"] {
+  padding: 8px;
+}

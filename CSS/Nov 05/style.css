@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100dvh;
+}
+
+.container{
+  border: 2px solid violet;
+  margin: 20px;
+  padding: 12px;
+}
+
+.grid-container{
+  outline: 2px solid purple;
+  margin: 12px;
+  padding: 12px;
+  height: 80vh;
+  background: #acdde0;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(6, 1fr); */
+  grid-template-columns: repeat(6, minmax(100px, 200px));
+  grid-template-rows: 60px 100px 80px 60px;
+  grid-template-areas: 
+    "header header header header header header"
+    "aside main main main main main"
+    "aside section1 section1 section1 section2 section2"
+    "footer footer footer footer footer footer"
+    ;
+  /* column-gap: 12px; */
+  /* row-gap: 12px; */
+  gap: 12px;
+
+  /* justify-content: center;
+  align-content: center; */
+  place-content: center;
+
+  /* justify-items: center;
+  align-items: center; */
+  /* place-items: center; */
+}
+.item-1{
+  grid-area: header;
+}
+
+.item-2{
+  grid-area: aside;
+}
+.item-3{
+  grid-area: main;
+}
+.item-4{
+  grid-area: section1;
+}
+.item-5{
+  grid-area: section2;
+  /* justify-self: end;
+  align-self: flex-end; */
+  place-self: center end;
+}
+.item-6{
+  grid-area: footer;
+}
+
+.item{
+  outline: 1px solid magenta;
+  background: #c5c5c599;
+}
+

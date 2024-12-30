@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #eac96e;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eee;
+  height: 100vh;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+  background-color: #eac96e;
+  text-align: center;
+  align-content: center;
+  /* transform: translateX(50px) translateY(50px); */
+  /* transform: translate(50px, 50px); */
+  /* transform: scaleX(2); */
+  /* transform: scaleY(2); */
+  /* transform: scale(1.2, 2.4); */
+  /* transform: rotateY(120deg) rotateX(211deg) rotateZ(60deg); */
+  /* transform: rotate(211deg); */
+  /* transform: skewX(30deg) skewY(20deg); */
+  /* transform: skew(30deg, 20deg); */
+  /* transform: perspective(100px) rotateX(30deg) rotateY(30deg) rotateZ(30deg); */
+
+  /* animation-name: beginerMagic; */
+  animation-name: three-d-rotate;
+  animation-duration: 4s;
+  /* animation-iteration-count: 2; */
+  animation-iteration-count: infinite;
+  /* animation-delay: 5s; */
+}
+
+/* @keyframes beginerMagic {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+} */
+
+/* @keyframes beginerMagic {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes beginerMagic {
+  0%{
+    width: 200px;
+    height: 200px;
+  }
+  25%{
+    width: 300px;
+  }
+  50%{
+    width: 400px;
+  }
+  75%{
+    height: 300px;
+  }
+  100%{
+    height: 200px;
+  }
+}
+
+@keyframes three-d-rotate {
+  0%{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25%{
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg);
+  }
+  50%{
+    transform: rotateX(0deg) rotateY(90deg) rotateZ(90deg);
+  }
+  75%{
+    transform: rotateX(190deg) rotateY(90deg) rotateZ(90deg);
+  }
+  100%{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+
+
+/* To modify or hide scrollbar */
+::-webkit-scrollbar {
+  /* display: none; */
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #907c45;
+  border-radius: 4px;
+}
